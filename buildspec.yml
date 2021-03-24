@@ -9,10 +9,10 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t awscode:aws2 .
-      - docker tag awscode:aws2 2681997/awscode:aws2
+      - docker build -t angular:aws .
+      - docker tag angular:aws 2681997/angular:aws
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push 2681997/awscode:aws2
+      - docker push 2681997/angular:aws
